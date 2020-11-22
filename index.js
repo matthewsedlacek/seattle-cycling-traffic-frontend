@@ -101,7 +101,7 @@ const form = document.querySelector(".message-form");
 
 // FETCHES MESSAGES FROM BACKEND
 function getMessage() {
-  fetch("http://localhost:3000/messages")
+  fetch("https://shrouded-temple-24311.herokuapp.com/messages")
     .then((resp) => resp.json())
     .then((json) => json.forEach((message) => renderMessage(message)));
 }
@@ -151,9 +151,12 @@ function addDeleteButton(message) {
 
 // DELETE FETCH REQ
 function deleteMessage(message) {
-  fetch(`http://localhost:3000/messages/${message.children[0].id}`, {
-    method: "DELETE",
-  })
+  fetch(
+    `https://shrouded-temple-24311.herokuapp.com/messages/${message.children[0].id}`,
+    {
+      method: "DELETE",
+    }
+  )
     .then((response) => response.json())
     .then((json) => {
       return json;
@@ -183,7 +186,7 @@ postBtn.addEventListener("click", (e) => {
 
 // POST FETCH REQ
 function postMessage(newUser, newMsg, newTrail) {
-  fetch("http://localhost:3000/messages", {
+  fetch("https://shrouded-temple-24311.herokuapp.com/messages", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -211,7 +214,9 @@ const trailInfo = document.querySelector("#trail-info");
 
 // fetch bike trail data
 function getBikeTrailData(bikeTrailId) {
-  fetch("http://localhost:3000/bike_trails/" + bikeTrailId)
+  fetch(
+    "https://shrouded-temple-24311.herokuapp.com/bike_trails/" + bikeTrailId
+  )
     .then((resp) => resp.json())
     .then((json) => renderBikeTrailData(json));
 }

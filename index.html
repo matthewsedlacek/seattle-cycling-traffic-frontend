@@ -29,25 +29,31 @@
 <body>
 
     <!-- weather header -->
-    <nav class="navbar navbar-fixed-top bg-primary";>
+    <nav class="navbar sticky-top navbar-light bg-primary";>
         <div class="container-fluid">
-                <div class="col-sm-3">
-                    <h2>Weather</h2>
+            <div class="row justify-content-start">
+
+                <div class="col-4">
+                    <img src="images/logo.png" alt="Seattle Bike Traffic Logo">
                 </div>
-                <div class="col-sm-3">
-                    <div id="description"></div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <h6 id="location"></h6>
+                    <h6>Weather</h6>
                 </div>
-                <div class="col-sm-3">
-                    <h1 id="temp"></h1>
+                <div class="col-4">
+                    <h6 id="description"></h6>
                 </div>
-                <div class="col-sm-3">
-                    <div id="location"></div>
+                <div class="col-4">
+                    <h6 id="temp"></h6>
                 </div>
+            </div>
         </div>
     </nav>
 
     <!-- body container -->
-    <div class="container-fluid content" style="margin-top: 75px; margin-bottom: auto;">
+    <div class="container-fluid content" style="margin-top: 25px; margin-bottom: auto;">
 
         <!-- map -->
         <div class="col-md-6" style="height:900px; margin-bottom: auto;" >

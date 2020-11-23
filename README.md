@@ -8,6 +8,10 @@ This [link](https://github.com/matthewsedlacek/seattle-cycling-traffic-backend) 
 
 The Seattle Cycling Trafic application was created to provide cyclists with a consolidated view of trail options and bicycle traffic patterns. The application empowers users to make informed decisions about which bike trail is best for them and the times to ride.
 
+## Live Demo
+
+Visit https://seattle-bike-traffic.netlify.app/
+
 ## Installation
 
 1. Clone this repository

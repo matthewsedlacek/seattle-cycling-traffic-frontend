@@ -11457,5 +11457,6 @@ a.text-dark:focus {
 }
 
 #mapid {
-  height: 925px;
+  height: 800px;
+  padding: 10px;
 }

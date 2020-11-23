@@ -29,7 +29,7 @@ L.tileLayer(
     zoomOffset: -1,
     // put mapbox access token here
     accessToken:
-      "pk.eyJ1IjoibWF0dHNlZDE5OTEiLCJhIjoiY2tlYWRyZzFoMDI4cDJzcHU3ZzJuNnFrdiJ9.r94ih7yPhMDQ8UB8X80zLA",
+      "pk.eyJ1IjoibWF0dHNlZDE5OTEiLCJhIjoiY2todHg5bTd3MHpiYTMwbXkzdTNxbGRudCJ9.ThS7ZuUuMHb_rW8Z-GDUMg",
   }
 ).addTo(mymap);
 
